@@ -1,0 +1,388 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    text-align: center; 
+
+}
+
+
+body{
+    background-color: #E9F7F6;
+   
+    
+}
+
+
+
+                    /* HEADER SECTION */
+
+header{
+    background-color: #C6CFCF;
+    width: 100%; 
+}
+
+#button {
+    position: relative;
+    float: right;
+    bottom: 30px;
+    right: 100px;
+    display: block;
+    width: 40px;
+    height: 20px;
+    border-radius: 160px;
+    background: #E9F7F6;
+    transition: 0.5s;
+                inset: 0 8px 60px rgba(0,0,0,0.1);
+                inset: 0 8px 8px rgba(0,0,0,0.1);
+                 inset: 0 -4px 4px rgba(0,0,0,0.1);
+                 cursor: pointer;
+    
+}
+
+#button .inner {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(to bottom, #fff,rgb(160, 158, 158));
+    border-radius: 50%;
+    transform: scale(0.9);
+    box-shadow: 0 8px 40px rgba(0,0,0,0.1) ;
+                inset: 0 4px 4px rgba(255,255,255,0.2);
+                inset: 0 -4px 4px rgba(255,255,255,0.2);
+}
+/* DARK MODE BUTTON */
+.darkNight .inner{
+    margin-left: 20px;
+    
+
+ }
+
+ .darkNight #button {
+     background-color: #353232;
+ }
+
+/* DARK BUTTON MODE DONE */
+
+ul{
+    list-style: none;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 7px;
+    
+    
+}
+
+li{
+    padding: 10px;
+    
+}
+
+li a{
+    color: #224575;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    
+}
+
+li a:hover{
+    color: #29548F;
+    background-color: #dee6e6;
+    border-radius: 4px;
+    transition: all 0.5s ease-in-out;
+    
+
+}
+
+
+/* MAIN SECTION */ 
+
+ h1{
+    text-align: center;
+    margin-top: 200px;
+    font-size: 3rem;
+    color: #000000;
+    
+    position: relative;
+}
+
+@keyframes hello {
+    from {
+        letter-spacing: 0px;
+    } 
+    40% {
+        letter-spacing: 5px;
+    }
+
+    70%{
+        letter-spacing: 7px;
+    }
+    to {
+        letter-spacing: 9px;
+    }
+}
+span {
+  animation: hello 1s infinite ease-in-out;
+  color: #1B3C68;
+}
+
+
+
+
+.image:hover {
+    border-radius: 20%;
+   transition: all 0.5s ease-in-out;
+}
+
+.about-me{
+    position: relative;
+    margin-left: 190px;
+   top: 150px;
+    
+}
+
+
+.about-me p {
+    position: relative;
+    
+    color: #000000;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.5rem;
+    
+    
+}
+
+.pointer{
+    width: 70px;
+    position: relative;
+    opacity: 0;
+    animation: point 1s ease-in-out infinite;
+    bottom: 50px;
+}
+
+@keyframes point {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+
+/* SKILLS | CONTACT SECTION */
+
+.skills {
+    position: relative;
+    right: 250px;
+    color: #29548F;
+    top: 30px;
+    
+    
+}
+
+
+
+.skills img {
+    width: 100px;
+      
+}
+
+hr{
+    position: relative;
+    border-radius: 40%;
+    margin-top: 500px;
+   
+    
+}
+
+.contact {
+    
+    color: #224575;
+    position: relative;
+    margin-left: 560px;
+    bottom: 100px;
+    
+    font-family: 'Joan', serif;
+    
+
+}
+ h2{
+    font-family: 'Joan', serif;
+    font-style: normal;
+    
+}
+
+button {
+    
+    letter-spacing: normal;
+    border-radius: 3px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    background-color: #dfe9f9;
+    color: #0b0d0d;
+    text-align: center;
+    cursor: pointer;
+    border-width: 0.5px;
+
+}
+
+button a:active{
+    color: whitesmoke;
+    background-color: #29548F;
+}
+
+button a {
+    color: #000000;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.github {
+    width: 30px;
+    padding-top: 30px;
+}
+
+.mail {
+    width: 30px;
+}
+
+.linkedin{
+    width: 40px;
+    position: relative;
+    top: 5px;
+}
+
+.dark-logo .logos{
+    background-color: rgb(158, 141, 112);
+    border-radius: 10%;
+    width: 5%;
+    
+}
+
+
+
+/* PROJECTS PAGE*/
+.projects{
+    display: flex;
+    justify-content: center;
+}
+.calcu{
+    width: 160px;
+   
+}
+
+
+/* DARK MODE */
+.dark {
+    background-color: #353232;
+}
+
+.dark header{
+background-color: #454141;
+}
+
+.dark li a, .dark h2, .dark .forDark, .dark h1{
+    color: #ACAD74;
+}
+
+
+.dark p, .dark label, .dark legend, .dark span{
+    color: #bdbea7;
+}
+
+
+
+
+ /* CONTACT PAGE STYLE | FORM */
+ 
+
+ fieldset {
+    width: 600px;
+    padding: 10px;
+    margin: 30px auto;
+    
+    
+}
+
+
+input, textarea, label, select, footer a{
+    margin: 5px;
+}
+
+footer{
+    display: flex;
+   
+}
+
+.logos{
+   
+    margin: 10px auto; 
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 600px){
+    
+    fieldset{
+        width: 250px;
+    }
+
+    header{
+        height: 65px;
+        width: 100%;
+    }
+    ul {
+       letter-spacing: normal;   
+    }
+    #button{
+        position: relative;
+        top: 0.5px;
+        right: 170px;
+    }
+
+    .pointer{
+        display: none;
+       
+    }
+    
+    .about-me h1{
+        font-size: 3rem;
+        right: 100px;
+        
+    }
+    .about-me h1,p {
+        bottom: 150px;
+
+    }
+    .about-me p {
+        width: 380px;
+        font-size: 1.3rem;
+        margin-left: 20px;
+        
+    }
+
+    .respon-p{
+        position: relative;
+        right: 200px;
+        
+
+    }
+
+    .skills{
+        left: 0px;
+    }
+    .contact{
+        margin: 0 auto;
+        top: 100px;
+        bottom: 50px;
+        
+    }
+    hr{
+        display: none;
+    }
+}
