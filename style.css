@@ -2,9 +2,8 @@
     text-decoration: none;
     margin: 0;
     padding: 0;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Noto Serif', sans-serif;
     font-weight: 200;
-    font-style: italic;
     text-align: center; 
 
 }
@@ -12,16 +11,24 @@
 
 body{
     background-color: #E9F7F6;
-   
+    background-image: url(./images/cloud.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:top;
     
 }
 
-
+.dark-back{
+    background-image: url(./images/nasa.jpg);
+    
+    background-size: cover;
+       
+}
 
                     /* HEADER SECTION */
 
 header{
-    background-color: #C6CFCF;
+    //background-color: #C6CFCF;
     width: 100%; 
 }
 
@@ -84,6 +91,32 @@ li{
     
 }
 
+li img {
+    width: 20px;
+}
+.sub-menu ul {
+    display: block; 
+    background-color: #9bbae4;
+    border-radius: 2px;
+    
+}
+
+.sub-menu {
+    display: none;
+}
+
+#skilz:hover > .sub-menu{
+    display: block;
+    position: absolute;
+    animation: all 1s ease-in-out;
+}
+
+.sub-menu li {
+    font-size: 0.7rem;
+    padding: 0;
+    letter-spacing: normal;
+
+}
 li a{
     color: #224575;
     font-family: 'Roboto', sans-serif;
@@ -106,9 +139,9 @@ li a:hover{
  h1{
     text-align: center;
     margin-top: 200px;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #000000;
-    
+    font-weight: 700;
     position: relative;
 }
 
@@ -130,6 +163,7 @@ li a:hover{
 span {
   animation: hello 1s infinite ease-in-out;
   color: #1B3C68;
+  font-size: 2rem;
 }
 
 
@@ -143,71 +177,44 @@ span {
 .about-me{
     position: relative;
     margin-left: 190px;
-   top: 150px;
+    bottom: 50px;
     
 }
 
+.about-me img{
+    border-radius: 30%;
+    width: 180px;
+}
+
+.about-me img:hover{
+    transform: rotate(10deg);
+    transform: all 0.5s ease-in;
+}
 
 .about-me p {
     position: relative;
     
     color: #000000;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.5rem;
+    font-family: 'Noto Serif', sans-serif;
+    
+    font-size: 1.2rem;
     
     
 }
 
-.pointer{
-    width: 70px;
-    position: relative;
-    opacity: 0;
-    animation: point 1s ease-in-out infinite;
-    bottom: 50px;
-}
 
-@keyframes point {
-    from {
-        opacity: 0;
-    } to {
-        opacity: 1;
-    }
-}
 
 
 /* SKILLS | CONTACT SECTION */
 
-.skills {
-    position: relative;
-    right: 250px;
-    color: #29548F;
-    top: 30px;
-    
-    
-}
-
-
-
-.skills img {
-    width: 100px;
-      
-}
-
-hr{
-    position: relative;
-    border-radius: 40%;
-    margin-top: 500px;
-   
-    
-}
 
 .contact {
     
     color: #224575;
     position: relative;
     margin-left: 560px;
-    bottom: 100px;
-    
+    top: 100px;
+    right: 80px;
     font-family: 'Joan', serif;
     
 
@@ -216,6 +223,14 @@ hr{
     font-family: 'Joan', serif;
     font-style: normal;
     
+}
+
+@keyframes point {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
 }
 
 button {
@@ -242,6 +257,8 @@ button a {
     font-family: 'Raleway', sans-serif;
 
 }
+
+/*  SKILLS | CONTACT SECTION DONE */
 
 .github {
     width: 30px;
@@ -284,16 +301,18 @@ button a {
 }
 
 .dark header{
-background-color: #454141;
+//background-color: #454141;
 }
 
 .dark li a, .dark h2, .dark .forDark, .dark h1{
-    color: #ACAD74;
+    color: #dfdcd5;
 }
 
 
 .dark p, .dark label, .dark legend, .dark span{
-    color: #bdbea7;
+    background: -webkit-linear-gradient(rgb(240, 227, 227),rgb(158, 158, 146));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 
@@ -350,19 +369,32 @@ footer{
        
     }
     
+    .about-me img {
+        width: 60%;
+        position: relative;
+        bottom: 150px;
+        right: 95px;
+    }
+    
     .about-me h1{
-        font-size: 3rem;
-        right: 100px;
+        font-size: 1.5rem;
+        right: 180px;
+        margin-bottom: 10px;
+        width: 350px;
+        
+        
         
     }
     .about-me h1,p {
         bottom: 150px;
+        
 
     }
     .about-me p {
         width: 380px;
         font-size: 1.3rem;
         margin-left: 20px;
+        font-size: 1rem;
         
     }
 
@@ -380,9 +412,10 @@ footer{
         margin: 0 auto;
         top: 100px;
         bottom: 50px;
+    }
+    #sklz{
+        margin: 0px auto 500px auto;
+        border: 1px solid red;
         
-    }
-    hr{
-        display: none;
-    }
+}
 }

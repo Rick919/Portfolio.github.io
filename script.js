@@ -7,5 +7,6 @@ button.addEventListener('click', () => {
     body.classList.toggle('dark')
     body.classList.toggle('darkNight')
     body.classList.toggle('dark-logo')
+    body.classList.toggle('dark-back')
     
 })
