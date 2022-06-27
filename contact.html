@@ -13,7 +13,8 @@
 <body id="body">
     <header>
         <nav>
-            <ul>
+
+            <ul class="first-list">
                 <li><a href="./index.html">about</a></li>
                 <li id="skilz"><a href="#skills">skills</a>
                     <div class="sub-menu">
@@ -28,6 +29,29 @@
                 <li><a href="#">contact </a></li>
                 <li><a href="./projects.html" target="_blank">projects</a></li>
             </ul>
+
+            <div class="outer-menu">
+                <div class="inner-menu"></div>
+            
+            <div id="resNav">
+            <ul>
+                <li><a href="./index.html" >about</a></li>
+                <li id="skilz"><a href="#skills" >skills</a>
+                <div class="sub-menu">
+                        <ul>
+                            <li><img src="./images/html.png" alt=""> HTML</li>
+                            <li><img src="./images/cs3.png" alt=""> CSS</li>
+                            <li> <img src="./images/js.png" alt=""> JAVASCRIPT</li>
+                        </ul>
+
+                </div>
+                </li>
+                <li><a href="./contact.html" target="_blank">contact </a></li>
+                <li><a href="./projects.html" target="_blank">projects</a></li>
+            </ul>
+        </div>
+    </div>
+
             <div id="button">
                 <div class="inner"></div>
             </div>
@@ -37,27 +61,16 @@
         <fieldset>
             <legend> Let's Work Together</legend>
             <label for="name"> First Name</label>
-            <input type="text" name="name" id="name" required>
+            <input type="text" name="name" id="name" required> <br>
             <label for="last">Last Name</label>
             <input type="text" name="last" id="last" required> <br>
-            <label for="country">Where are you from ? </label> 
-            <select name="country" id="country">
-                <option value="Saudi Arabia">KSA</option>
-                <option value="United States"> USA</option>
-                <option value="UAE">UAE</option>
-            </select>
+            
             <label for="email"> E-Mail:</label>
             <input type="email" id="email" >
             <br>
             <label for="number">Mobile Number (Optional)</label>
             <input type="text" id="number">
-            <br>
-            <label for="budget"> Your Budget </label>
-                <select name="budget" id="budget">
-                    <option value="500$ - 1500$">500$ - 1500$</option>
-                    <option value="1500$ - 2500$">1500$ - 2500$</option>
-                    <option value="2500$ - more">2500$ - more</option>
-                </select>
+           
                 <br>
             <textarea name="extraInfo" id="extraInfo" cols="60" rows="10"> anything you wanna add ?</textarea>
             <br>
@@ -66,11 +79,15 @@
         </fieldset>
     </div>
     <footer>
+     
         <div class="logos">
-    <a href="https://github.com/Rick919" target="_blank"><img src="./images/githublogo.png" class="github" alt="githubLogo"></a>
-    <a href="mailto:tariqalsharief@live.com"><img src="./images/mail.png" class="mail" alt="mailLogo"> </a>
-     <a href="https://www.linkedin.com/in/tariq-alsharif/"><img src="./images/in.png" class="linkedin" alt="linkedinLogo"> </a>
-</div>
+            <a href="https://github.com/Rick919" target="_blank"><img src="./images/githublogo.png" class="github" alt="githubLogo"></a>
+            <a href="mailto:tariqalsharief@live.com"><img src="./images/mail.png" class="mail" alt="mailLogo"> </a>
+             <a href="https://www.linkedin.com/in/tariq-alsharif/"><img src="./images/in.png" class="linkedin" alt="linkedinLogo"> </a>
+        </div>
+<hr>
+        <h6>TARIQ ALSHARIF | 2022</h6>
+        
 </footer>
 </body>
 <script src="./script.js"></script>

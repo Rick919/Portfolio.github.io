@@ -10,3 +10,21 @@ button.addEventListener('click', () => {
     body.classList.toggle('dark-back')
     
 })
+
+let menuBtn = document.querySelector('.outer-menu');
+    let open = document.getElementById('#resNav');
+
+    
+    let menuOpen = false;
+
+    menuBtn.addEventListener('click', () => {
+        if(!menuOpen) {
+            menuBtn.classList.add('open');
+            menuOpen = true;
+        } else {
+            menuBtn.classList.remove('open');
+            menuOpen = false;
+        }
+        
+        body.classList.toggle('openMen');
+    })
