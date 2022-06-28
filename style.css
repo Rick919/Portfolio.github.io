@@ -92,27 +92,25 @@ li{
 li img {
     width: 20px;
 }
-.sub-menu ul {
-    display: block; 
+.sub-menu  {
+     display: none;
     background-color: #9bbae4;
     border-radius: 2px;
-    
+    list-style: none; 
 }
 
-.sub-menu {
-    display: none;
-}
 
-#skilz:hover > .sub-menu{
+#skilz:hover > .sub-menu {
     display: block;
     position: absolute;
-    animation: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
 .sub-menu li {
     font-size: 0.7rem;
     padding: 0;
     letter-spacing: normal;
+    list-style: none;
 
 }
 li a{
@@ -340,12 +338,15 @@ h6{
         padding: 0;
         margin: 0;
         box-sizing: border-box;
+        
     }
     body{
         
         display: grid;
         place-items: center;
     }
+    
+    
     .first-list{
         display: none;
     }
@@ -373,65 +374,26 @@ h6{
         position: relative;
         right: 15px;
     }
-    /*header{
-        height: 65px;
-        width: 100%;
-    }
-    ul {
-       letter-spacing: normal;   
-    }
     
-    
-    fieldset{
-        width: 100px;
-    }
-    
-     
-    
-    .about-me img {
-       position: relative;
-       right: 50%;
-       bottom: 70%;
-    }
-
-    .about-me h1{
-        font-size: 1.5rem;
-        right: 180px;
-        margin-bottom: 10px;
-        width: 350px;
-       bottom: 150px;
-    }
-    
-    .about-me p {
-        width: 380px;
-        font-size: 1.1rem;
-        margin-left: 20px;
-        font-size: 1rem;
-        bottom: 50px;
-        
-    }
-
-    .respon-p{
-        position: relative;
-        right: 200px;
-        font-size: 1.2rem;
-    }
-    */
     
     #resNav{
         display: none;
         position: relative;
-        top: 100px;
+        top: 60px;
         left: 70px;
         width: 400px;
-        
+        background-color: #89b1e9;
         border-radius: 10%;
+        
     }
+
+    
 
     li{
         letter-spacing: normal;
         text-transform: uppercase;
         list-style: none;
+        
     }
     
     .dark li {
@@ -491,6 +453,8 @@ h6{
         display: block;
     }
 
+    
+
     footer{
         margin-top: 330px;
     }
@@ -499,4 +463,17 @@ h6{
         position: relative;
         bottom: 300px;
     }
+
+    .sub-menu{
+        
+        position: relative;
+        left: 90px;
+        bottom: 50px;
+        width: 100%;
+
+    }
+     
+
+
+    
 }

@@ -3,6 +3,10 @@ let button = document.getElementById('button');
 let inner = document.querySelector('.inner');
 let body = document.getElementById('body');
 
+
+
+
+
 button.addEventListener('click', () => {
     body.classList.toggle('dark')
     body.classList.toggle('darkNight')
@@ -11,10 +15,9 @@ button.addEventListener('click', () => {
     
 })
 
-let menuBtn = document.querySelector('.outer-menu');
-    let open = document.getElementById('#resNav');
-
     
+
+let menuBtn = document.querySelector('.outer-menu');
     let menuOpen = false;
 
     menuBtn.addEventListener('click', () => {
